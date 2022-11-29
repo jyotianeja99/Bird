@@ -19,4 +19,9 @@ public class BirdController {
 
     }
 
+    @GetMapping("/birdEaters")
+    public List<Bird> getEaterBirds() throws Exception{
+        return birdService.getEaters();
+    }
+
 }
